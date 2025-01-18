@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Appointment Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<!--
+   student name             ID
+   1,Gemtessa Deksisa      0481/15
+   2,Gemechu Hunduma       0479/15
+   3,Gudeta Tolosa         0491/15
+   4,Indris Elmi           0571/15
+   5,Najash Anuwar         0855/15
+-->
+
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Your Website Logo or Title -->
+            <h1> Appointment </h1>
+            <!-- Search Form -->
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
+                <button type="submit" class="search-button" aria-label="Submit Search">
+                    <img src="search.jpg" alt="facebook Logo" width="30" height="30">
+                    <i class="fas fa-search"></i> <!--  Use a search icon from Font Awesome (or another library)  -->
+                </button>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="#home" onclick="showSection('home')">home</a></li>
+                    <li><a href="#about" onclick="showSection('about')">About-Us</a></li>
+                    <li><a href="#schedule" onclick="showSection('schedule')">Our-Schedule</a></li>
+                    <li><a href="#appointment" onclick="showSection('appointment')">For-Appointment</a></li>
+                    <li> <a href="#services" onclick="showSection('services')">Our-services</a></li>
+                    <li><a href="#contact" onclick="showSection('contact')">Contact-Us</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <!-- Add this button at the end of the body -->
+        <!--home section-->
+        <section id="home" class="hidden">
+            <h1> WELL COME TO OUR CLINIC</h1>
+            <li> THIS IS OUR SURGEONS</li>
+
+            <p>
+                <img src="7.jpg" alt="wait me" width="">
+            </p>
+            <li> THIS IS OUR COMPEX</li>
+            <p>
+                <img src="exp.jpg" alt="wait me" width="100%">
+            </p>
+            <li>THI IS OUR DOCTORS</li>
+            <p>
+                <img src="4.png" alt="wait me" width="100%">
+            </p>
+            <li> THIS OUR LABRATORY ROOM</li>
+            <p><img src="mri.jpg" alt="wait me" width="100%"></p>
+            <p><img src="ex.jpg" alt="" width="100%"></p>
+            <li> THIS IS THE DISEASE</li>
+            <p><img src="5.png" alt="wait me" width="100%"></p>
+            <li>THI IS OUR DOCTORS</li>
+            
+        </section>
+        <!-- About Section -->
+        <section id="about" class="hidden">
+            <h2>About Us</h2>
+            <p>
+                The hospital was established by Dr. Gemtessa in 1930 E.C.
+                The Hospital has been serving as the only public specialized hospital since 1930 E.C.
+                In addition to providing clinical service,
+                the hospital has been delivering different types of long-term and short-term training for health
+                professionals.
+            </p>
+            <ul>
+                <li>Scientific Skills For getting a better result</li>
+                <li>Communication Skills to getting in touch</li>
+                <li>A Career Overview opportunity Available</li>
+                <li>A good Work Environment For work</li>
+            </ul>
+
+
+            <h2>Our Mission</h2>
+            <ul>
+                <li>Provide comprehensive health care service to the society.</li>
+            </ul>
+
+
+
+            <h2>Our Values</h2>
+            <ul>
+                <li>Honesty</li>
+                <li>Accountability</li>
+                <li>Responsive</li>
+            </ul>
+            <h2>Our Vision</h2>
+            <li>To Become One of the Leading Specialized Hospitals.</li>
+            <li>Provide comprehensive health care service to the society.</li>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="hidden">
+            <h2>Our Weekly Job Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Profession</th>
+                        <th>Action</th>
+                        <th>Name of Doctor</th>
+                        <th>Working Time</th>
+                        <th>Meridian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>All Day</td>
+                        <td>Emergency</td>
+                        <td>Any disease</td>
+                        <td>nurses and Doctors</td>
+                        <td>24:00</td>
+                        <td>a day</td>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>General Surgeon</td>
+                        <td>Surgery</td>
+                        <td>Dr. Abrihm</td>
+                        <td>3:00-6:00</td>
+                        <td>PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Family Specialist</td>
+                        <td>Advice</td>
+                        <td>Dr. Hachalu</td>
+                        <td>3:00-6:00</td>
+                        <td>PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Children Specialist</td>
+                        <td>Child Care</td>
+                        <td>Dr. Gada</td>
+                        <td>3:00-6:00</td>
+                        <td>PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Psychiatrist</td>
+                        <td>Mental Treatment</td>
+                        <td>Dr. Habtamu</td>
+                        <td>3:00-6:00</td>
+                        <td>AM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Dentist</td>
+                        <td>Teeth Care</td>
+                        <td>Dr. Gelan</td>
+                        <td>3:00-6:00</td>
+                        <td>AM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Eye Specialist</td>
+                        <td>Eye Care</td>
+                        <td>Dr. Hunde</td>
+                        <td>3:00-6:00</td>
+                        <td>AM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Obstetrician</td>
+                        <td>Pregnancy</td>
+                        <td>Dr. Chala</td>
+                        <td>3:00-6:00</td>
+                        <td>AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="hidden">
+            <div>
+                <button class="toggle-btn" onclick="toggleForm('login')">Log In</button>
+                <button class="toggle-btn" onclick="toggleForm('create')">Create New Account</button>
+            </div>
+            <div id="loginForm" class="form-container" style="display: block;">
+                <h2>Log In</h2>
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required>
+                    </div>
+                    <button type="submit" class="btn">Log In</button>
+
+                </form>
+            </div>
+
+            <!-- Create Account Form -->
+
+            <div id="createAccountForm" class="form-container">
+                <h2>Create New Account</h2>
+                <form onsubmit="handleCreateAccount(event)">
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="USA">USA</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="region">Region:</label>
+                        <select id="region" name="region" required>
+                            <option value="">Select your region</option>
+                            <option value="Oromia">Oromia</option>
+                            <option value="Amhara">Amhara</option>
+                            <option value="South Nations">South Nations</option>
+                            <option value="Harar">Harar</option>
+                            <option value="Tigray">Tigray</option>
+                            <option value="Somali">Somali</option>
+                            <option value="Afar">Afar</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="town">Town:</label>
+                        <select id="town" name="town" required>
+                            <option value="">Select your city</option>
+                            <option value="Addis Ababa">Addis Ababa</option>
+                            <option value="Dire Dawa">Dire Dawa</option>
+                            <option value="Harar">Harar</option>
+                            <option value="Adama">Adama</option>
+                            <option value="Jimma">Jimma</option>
+                            <option value="Nekemte">Nekemte</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="healthProblem">Health Problem:</label>
+                        <select id="healthProblem" name="healthProblem" required>
+                            <option value="">Select your health problem</option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Diabetes">Diabetes</option>
+                            <option value="HIV">HIV</option>
+                            <option value="Malaria">Malaria</option>
+                            <option value="COVID-19">COVID-19</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service You Want:</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select the service you want</option>
+                            <option value="Eye Treatment">Eye Treatment</option>
+                            <option value="Children Treatment">Children Treatment</option>
+                            <option value="Psychiatry">Psychiatry</option>
+                            <option value="Pregnancy">Pregnancy</option>
+                            <option value="Surgery">Surgery</option>
+                            <option value="Consultancy">Consultancy</option>
+                            <option value="Diabetes">Diabetes</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthDate">Birth Date:</label>
+                        <input type="date" id="birthDate" name="birthDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Enter Password:</label>
+                        <input type="password" id="pass" name="pass" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Re-enter Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword"
+                            placeholder="Re-enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Create Account</button>
+                </form>
+            </div>
+        </section>
+        <section id="services" name="service" class="hidden">
+            <h6> well come to visit our service.</h6>
+            <li>Children care</li>
+            <li> pregenancy service</li>
+            <li> eye treatments</li>
+            <li>teeth treatments</li>
+            <li> onchology</li>
+            <li>full emergency services</li>
+            <li> adult treatments</li>
+            <li>healthy consultancy</li>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="hidden">
+            <h3>Contact Us</h3>
+            <a href="http://gemtessadeksia@gmail.com">
+                <img src=" email.jpg" alt="Email Logo" width="24" height="24"> our email:
+            </a>
+            <a href="www.youtube.com">
+                <img src="youtube.jpg" alt="youtube Logo" width="24" height="24">Visit Our-youtube:
+            </a>
+            <a href="www.tiktok.com">
+                <img src="tiktok.jpg" alt="TikTiktok Logo" width="24" height="24">Visit Our tiktok:
+            </a>
+            <a href="www.facebook.com">
+                <img src="facebook.jpg" alt="facebook Logo" width="24" height="24"> Visit Our facebook:
+            </a>
+            <a href="# "><img src="phone.jpg" alt="phone Logo" width="24" height="24">
+                +251-123-456-789 </a>
+            <a href="# "><img src="foot.jpg" alt="facebook Logo" width="24" height="24">
+                Address: Haramaya,Oromia,Ethiopia</a>
+        </section>
+        <div class="scroll-container">
+            <!-- Scroll to Top Button -->
+            <button class="scroll-button" onclick="scrollToTop()">
+                <i class="fas fa-arrow-up"> ↑ </i>
+            </button>
+            <!-- Scroll to Bottom Button -->
+            <button class="scroll-button" onclick="scrollToBottom()">
+                <i class="fas fa-arrow-down"> ↓ </i>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Clinic Appointment Scheduler. All rights reserved.</p>
+    </footer>
+</body>
+</html>
